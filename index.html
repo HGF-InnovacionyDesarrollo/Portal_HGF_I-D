@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portal MVP de la Unidad de Innovación y Desarrollo del Hospital Dr. Gustavo Fricke: investigación clínica, salud digital, desafíos y colaboración institucional.">
+  <title>Unidad de Innovación y Desarrollo | Hospital Dr. Gustavo Fricke</title>
+
+  <!-- MVP local sin dependencias externas: todo el layout base está en css/styles.css. -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header sticky-top bg-white">
+    <div class="institutional-bar" aria-hidden="true">
+      <canvas id="particlesCanvas"></canvas>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="#inicio" aria-label="Ir al inicio">
+          <div class="brand-mark" aria-hidden="true">HGF</div>
+          <div class="brand-text">
+            <span class="brand-kicker">Hospital Dr. Gustavo Fricke</span>
+            <strong>Unidad de Innovación y Desarrollo</strong>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#ecosistema">Ecosistema</a></li>
+            <li class="nav-item"><a class="nav-link" href="#desafios">Desafíos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#preguntas">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+            <li class="nav-item"><a class="btn btn-gob-primary btn-sm ms-lg-2" href="#postular">Postular solución</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero-section">
+      <div class="container">
+        <nav aria-label="Ruta de navegación" class="breadcrumb-wrapper">
+          <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+            <li class="breadcrumb-item"><a href="#">Red SSVQ</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Innovación Fricke</li>
+          </ol>
+        </nav>
+
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="section-label">MVP institucional para validación local</span>
+            <h1>Innovación, Investigación y Desarrollo Tecnológico en Salud</h1>
+            <p class="lead hero-lead">Impulsamos la modernización de la atención sanitaria pública mediante investigación clínica, salud digital y cocreación con el ecosistema innovador, situando cada avance tecnológico al servicio del bienestar de los pacientes.</p>
+            <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+              <a class="btn btn-gob-primary btn-lg" href="#postular"><i class="bi bi-lightbulb me-2" aria-hidden="true"></i>Postula una solución tecnológica</a>
+              <a class="btn btn-gob-outline btn-lg" href="#desafios"><i class="bi bi-search me-2" aria-hidden="true"></i>Explora desafíos clínicos</a>
+            </div>
+            <p class="small text-muted mt-3 mb-0">Sitio demostrativo. Las cifras, proyectos y correos deben ser validados antes de publicación institucional.</p>
+          </div>
+          <div class="col-lg-5">
+            <div class="hero-panel" role="img" aria-label="Resumen visual del ecosistema de innovación hospitalaria">
+              <div class="hero-panel-header">Ecosistema HGF</div>
+              <div class="hero-panel-node node-primary">Primera línea</div>
+              <div class="hero-panel-node">Investigación clínica</div>
+              <div class="hero-panel-node">Startups HealthTech</div>
+              <div class="hero-panel-node">Pilotaje seguro</div>
+              <div class="hero-panel-footer">Del desafío asistencial a la solución escalable</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="metrics-section" aria-labelledby="metricas-title">
+      <div class="container">
+        <div class="section-heading compact text-center">
+          <span class="section-label light">Indicadores referenciales</span>
+          <h2 id="metricas-title">Métricas para construir confianza institucional</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-6 col-lg-3">
+            <article class="metric-card">
+              <strong class="counter" data-target="12">0</strong>
+              <span>Proyectos en pilotaje</span>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3">
+            <article class="metric-card">
+              <strong class="counter" data-target="45">0</strong>
+              <span>Investigadores activos</span>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3">
+            <article class="metric-card">
+              <strong class="counter" data-target="8">0</strong>
+              <span>Convenios vigentes</span>
+            </article>
+          </div>
+          <div class="col-6 col-lg-3">
+            <article class="metric-card">
+              <strong><span class="counter" data-target="3500">0</span>+</strong>
+              <span>Horas optimizadas</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ecosistema" class="section-pad bg-soft" aria-labelledby="ecosistema-title">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-label">Modelo de colaboración</span>
+          <h2 id="ecosistema-title">Un hub clínico para conectar problemas reales con soluciones implementables</h2>
+          <p>El MVP organiza tres vías de entrada para reducir fricción, ordenar la demanda innovadora y preparar una transición operativa segura hacia pilotos validados.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="feature-card h-100">
+              <div class="feature-icon"><i class="bi bi-person-workspace" aria-hidden="true"></i></div>
+              <h3>Innovación intraemprendedora</h3>
+              <p>Canal para que equipos clínicos, administrativos y de apoyo propongan mejoras desde la primera línea, con formularios breves y evaluación de pertinencia.</p>
+              <a href="#postular" class="stretched-link">Ingresar idea interna</a>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="feature-card h-100">
+              <div class="feature-icon"><i class="bi bi-journal-medical" aria-hidden="true"></i></div>
+              <h3>Investigación científica</h3>
+              <p>Vinculación con universidades, comités institucionales, simulación clínica y equipos investigadores para fortalecer proyectos con trazabilidad metodológica.</p>
+              <a href="#ruta" class="stretched-link">Ver flujo de revisión</a>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="feature-card h-100">
+              <div class="feature-icon"><i class="bi bi-cpu" aria-hidden="true"></i></div>
+              <h3>Alianzas startups & tech</h3>
+              <p>Puerta de entrada para soluciones HealthTech que requieran validación clínica, pilotaje controlado, evaluación de factibilidad e interoperabilidad futura.</p>
+              <a href="#desafios" class="stretched-link">Explorar desafíos</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="desafios" class="section-pad" aria-labelledby="desafios-title">
+      <div class="container">
+        <div class="row align-items-end g-4 mb-4">
+          <div class="col-lg-8">
+            <span class="section-label">Convocatorias y problemas priorizados</span>
+            <h2 id="desafios-title">Desafíos clínicos y operacionales</h2>
+            <p class="section-intro">Publicación controlada de necesidades institucionales para recibir soluciones pertinentes, comparables y alineadas con valor público.</p>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="btn btn-gob-outline" href="#postular">Proponer respuesta a un desafío</a>
+          </div>
+        </div>
+
+        <div class="accordion shadow-sm" id="accordionDesafios">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#desafioUno" aria-expanded="true" aria-controls="desafioUno">
+                Optimización de triage y priorización de urgencias respiratorias pediátricas
+              </button>
+            </h3>
+            <div id="desafioUno" class="accordion-collapse collapse show" data-bs-parent="#accordionDesafios">
+              <div class="accordion-body">
+                <div class="row g-4">
+                  <div class="col-lg-8">
+                    <p><strong>Contexto:</strong> necesidad de fortalecer la categorización y continuidad del flujo asistencial en periodos de alta demanda.</p>
+                    <p><strong>Resultado esperado:</strong> reducir tiempos de espera, mejorar trazabilidad y apoyar decisiones operativas sin sustituir criterio clínico.</p>
+                    <p class="mb-0"><strong>Estado:</strong> ejemplo demostrativo para validación interna.</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <a class="btn btn-gob-primary w-100" href="#postular">Postular solución</a>
+                    <p class="small text-muted mt-2 mb-0">No incluir datos personales ni antecedentes clínicos en esta versión MVP.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#desafioDos" aria-expanded="false" aria-controls="desafioDos">
+                Monitoreo remoto domiciliario para pacientes crónicos complejos
+              </button>
+            </h3>
+            <div id="desafioDos" class="accordion-collapse collapse" data-bs-parent="#accordionDesafios">
+              <div class="accordion-body">
+                <p><strong>Contexto:</strong> explorar herramientas de seguimiento asincrónico y alerta temprana para apoyar continuidad de cuidados post alta.</p>
+                <p><strong>Resultado esperado:</strong> evaluar factibilidad, seguridad, adherencia usuaria y coordinación con equipos clínicos.</p>
+                <a class="btn btn-gob-primary" href="#postular">Postular solución</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#desafioTres" aria-expanded="false" aria-controls="desafioTres">
+                Automatización responsable de contactabilidad y experiencia usuaria
+              </button>
+            </h3>
+            <div id="desafioTres" class="accordion-collapse collapse" data-bs-parent="#accordionDesafios">
+              <div class="accordion-body">
+                <p><strong>Contexto:</strong> disminuir fricción en confirmación de citas, orientación usuaria y derivación de consultas frecuentes.</p>
+                <p><strong>Resultado esperado:</strong> mejorar oportunidad de respuesta, trazabilidad y satisfacción usuaria, con reglas de derivación humana claras.</p>
+                <a class="btn btn-gob-primary" href="#postular">Postular solución</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section-pad bg-soft" aria-labelledby="proyectos-title">
+      <div class="container">
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-end gap-4 mb-4">
+          <div>
+            <span class="section-label">Vitrina de innovación</span>
+            <h2 id="proyectos-title">Portafolio de proyectos</h2>
+            <p class="section-intro mb-0">Galería editable para mostrar iniciativas activas, fase de avance e impacto esperado.</p>
+          </div>
+          <div class="filter-group" aria-label="Filtrar portafolio">
+            <button class="filter-btn active" type="button" data-filter="all">Todos</button>
+            <button class="filter-btn" type="button" data-filter="clinica">Clínica</button>
+            <button class="filter-btn" type="button" data-filter="procesos">Procesos</button>
+            <button class="filter-btn" type="button" data-filter="experiencia">Experiencia</button>
+          </div>
+        </div>
+
+        <div class="row g-4" id="portfolioGrid">
+          <div class="col-md-6 col-xl-4 portfolio-item" data-category="clinica">
+            <article class="project-card h-100">
+              <div class="project-image placeholder-photo">Fotografía institucional pendiente</div>
+              <div class="project-body">
+                <span class="badge text-bg-primary">Pilotaje avanzado</span>
+                <h3>Análisis intraparto MEFI</h3>
+                <p>Apoyo analítico para monitoreo fetal en sala de partos, orientado a fortalecer oportunidad y seguridad clínica.</p>
+                <a href="#" aria-label="Ver detalles del proyecto Análisis intraparto MEFI">Ver detalles</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 portfolio-item" data-category="procesos">
+            <article class="project-card h-100">
+              <div class="project-image placeholder-photo">Fotografía institucional pendiente</div>
+              <div class="project-body">
+                <span class="badge text-bg-secondary">Validación operativa</span>
+                <h3>SOPHIA: tiempos de pabellón</h3>
+                <p>Modelo predictivo para estimar duración quirúrgica, reducir ociosidad y apoyar programación de recursos críticos.</p>
+                <a href="#" aria-label="Ver detalles del proyecto SOPHIA">Ver detalles</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 portfolio-item" data-category="clinica">
+            <article class="project-card h-100">
+              <div class="project-image placeholder-photo">Fotografía institucional pendiente</div>
+              <div class="project-body">
+                <span class="badge text-bg-secondary">Validación técnica</span>
+                <h3>SIPEC: prevención de caídas</h3>
+                <p>Visión computacional y procesamiento local para apoyar prevención de caídas, privacidad y respuesta temprana.</p>
+                <a href="#" aria-label="Ver detalles del proyecto SIPEC">Ver detalles</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 portfolio-item" data-category="experiencia">
+            <article class="project-card h-100">
+              <div class="project-image placeholder-photo">Fotografía institucional pendiente</div>
+              <div class="project-body">
+                <span class="badge text-bg-primary">Escalamiento</span>
+                <h3>Contactabilidad omnicanal</h3>
+                <p>Automatización de confirmación de citas, orientación usuaria y derivación de casos que requieren atención humana.</p>
+                <a href="#" aria-label="Ver detalles del proyecto Contactabilidad omnicanal">Ver detalles</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 portfolio-item" data-category="procesos">
+            <article class="project-card h-100">
+              <div class="project-image placeholder-photo">Fotografía institucional pendiente</div>
+              <div class="project-body">
+                <span class="badge text-bg-primary">Pilotaje avanzado</span>
+                <h3>SINIA: vigilancia IAAS</h3>
+                <p>Digitalización y trazabilidad de procesos de vigilancia epidemiológica institucional para decisiones oportunas.</p>
+                <a href="#" aria-label="Ver detalles del proyecto SINIA">Ver detalles</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-md-6 col-xl-4 portfolio-item" data-category="experiencia">
+            <article class="project-card h-100">
+              <div class="project-image placeholder-photo">Fotografía institucional pendiente</div>
+              <div class="project-body">
+                <span class="badge text-bg-warning">Exploración temprana</span>
+                <h3>VR terapéutico pediatría</h3>
+                <p>Uso de realidad virtual como apoyo de distracción terapéutica y experiencia positiva en pacientes pediátricos.</p>
+                <a href="#" aria-label="Ver detalles del proyecto VR terapéutico pediatría">Ver detalles</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ruta" class="section-pad" aria-labelledby="ruta-title">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-label">Gobernanza del MVP</span>
+          <h2 id="ruta-title">Ruta operativa desde idea a pilotaje</h2>
+          <p>Un flujo simple, auditable y escalable para que TIC y los equipos clínicos puedan evolucionar la plataforma sin rediseñar desde cero.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-step"><span>1</span><h3>Ingreso de necesidad</h3><p>Recepción de idea, desafío o solución externa mediante formulario liviano.</p></article>
+          <article class="timeline-step"><span>2</span><h3>Evaluación de pertinencia</h3><p>Revisión inicial de alineación estratégica, riesgo, impacto y factibilidad.</p></article>
+          <article class="timeline-step"><span>3</span><h3>Validación institucional</h3><p>Derivación a referentes técnicos, comités y unidades responsables según naturaleza del proyecto.</p></article>
+          <article class="timeline-step"><span>4</span><h3>Pilotaje controlado</h3><p>Prueba acotada con métricas, responsables, resguardos de datos y criterios de salida.</p></article>
+          <article class="timeline-step"><span>5</span><h3>Escalamiento</h3><p>Documentación de aprendizajes, transferencia operacional y evaluación de continuidad.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="recursos" class="section-pad bg-soft" aria-labelledby="recursos-title">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-label">Biblioteca de Recursos</span>
+          <h2 id="recursos-title">Documentos y Descargas Esenciales</h2>
+          <p>Accede a las plantillas y normativas necesarias para formalizar y validar propuestas de innovación e investigación en el entorno clínico.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <article class="resource-card h-100">
+              <div class="resource-icon">
+                <i class="bi bi-file-earmark-word" aria-hidden="true">W</i>
+              </div>
+              <div class="resource-body">
+                <h3>Ficha de Presentación</h3>
+                <p class="small text-muted">Plantilla oficial para estructurar y presentar una propuesta de innovación a la Unidad.</p>
+                <span class="file-info">DOCX | 45 KB</span>
+                <a href="docs/BACKLOG_TIC.md" download class="btn btn-gob-outline btn-sm w-100 mt-3">Descargar Ficha</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="resource-card h-100">
+              <div class="resource-icon">
+                <i class="bi bi-file-earmark-pdf" aria-hidden="true">PDF</i>
+              </div>
+              <div class="resource-body">
+                <h3>Consentimiento Tipo</h3>
+                <p class="small text-muted">Modelo de consentimiento informado obligatorio para proyectos con participación de pacientes.</p>
+                <span class="file-info">PDF | 120 KB</span>
+                <a href="docs/CHECKLIST_VALIDACION.md" download class="btn btn-gob-outline btn-sm w-100 mt-3">Descargar Modelo</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="resource-card h-100">
+              <div class="resource-icon">
+                <i class="bi bi-file-earmark-pdf" aria-hidden="true">PDF</i>
+              </div>
+              <div class="resource-body">
+                <h3>Protocolo de Pilotaje</h3>
+                <p class="small text-muted">Bases y requisitos técnicos para la ejecución de pruebas piloto en dependencias del hospital.</p>
+                <span class="file-info">PDF | 210 KB</span>
+                <a href="docs/DOSSIER_TECNICO_TIC.md" download class="btn btn-gob-outline btn-sm w-100 mt-3">Descargar Bases</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <article class="resource-card h-100">
+              <div class="resource-icon">
+                <i class="bi bi-shield-check" aria-hidden="true">🔒</i>
+              </div>
+              <div class="resource-body">
+                <h3>Ciberseguridad y Datos</h3>
+                <p class="small text-muted">Pauta técnica de seguridad y confidencialidad exigida por TIC para integraciones externas.</p>
+                <span class="file-info">PDF | 95 KB</span>
+                <a href="docs/DOSSIER_TECNICO_TIC.md" download class="btn btn-gob-outline btn-sm w-100 mt-3">Descargar Pauta</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="preguntas" class="section-pad" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-label">Resolución de Dudas</span>
+          <h2 id="faq-title">Preguntas Frecuentes</h2>
+          <p>Encuentra respuestas rápidas a las consultas más habituales de la comunidad hospitalaria, investigadores y empresas del ecosistema.</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-9">
+            <div class="search-wrapper mb-4">
+              <label for="faqSearch" class="form-label visually-hidden">Buscar en Preguntas Frecuentes</label>
+              <input type="text" id="faqSearch" class="form-control form-control-lg" placeholder="🔍 Escribe palabras clave para buscar (ej: datos, ética, financiar)...">
+              <p class="small text-muted mt-2 mb-0" id="searchFeedback" style="display:none;"></p>
+            </div>
+
+            <div class="accordion shadow-sm" id="accordionFaq">
+              <div class="accordion-item faq-item" data-keywords="seguridad privacidad datos pacientes ley 19628 tic proteccion confidencialidad">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqUno" aria-expanded="false" aria-controls="faqUno">
+                    ¿Cómo se garantiza la seguridad de los datos de los pacientes?
+                  </button>
+                </h3>
+                <div id="faqUno" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p class="mb-0">Todos los pilotajes y proyectos de investigación clínica son evaluados rigurosamente por nuestros equipos técnicos. Damos estricto cumplimiento a la <strong>Ley 19.628 de Protección de la Vida Privada</strong>. El portal MVP actual no recopila información sensible de pacientes. Para la fase productiva se exige que las integraciones se realicen dentro de la intranet segura del hospital o en servidores en la nube previamente certificados y autorizados por el Departamento de TIC.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item" data-keywords="viabilidad etica clinica comite evaluacion aprobacion cec ssvq">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqDos" aria-expanded="false" aria-controls="faqDos">
+                    ¿Quién evalúa la viabilidad ética y clínica de un proyecto?
+                  </button>
+                </h3>
+                <div id="faqDos" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p class="mb-0">Cualquier iniciativa de investigación clínica, ensayo tecnológico o pilotaje que involucre pacientes debe contar con la aprobación metodológica de la Unidad y la evaluación vinculante del <strong>Comité de Ética Científica (CEC) del Servicio de Salud Viña del Mar - Quillota (SSVQ)</strong>. Esto garantiza la integridad bioética de los procesos antes de iniciar cualquier fase operativa.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item" data-keywords="financiamiento fondos recursos dinero financiar corfo anid fondef alianzas">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTres" aria-expanded="false" aria-controls="faqTres">
+                    ¿Cómo se financian los proyectos de innovación y desarrollo?
+                  </button>
+                </h3>
+                <div id="faqTres" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p class="mb-0">La Unidad de Innovación y Desarrollo no financia directamente los proyectos de forma interna. Nuestra función es asesorar y conectar ideas potentes con fuentes de financiamiento públicas externas (tales como concursos de <strong>ANID, CORFO, Fondef</strong>), o estructurar convenios de colaboración y co-diseño con universidades, centros de investigación y startups tecnológicas que aportan sus propios recursos para pilotajes seguros.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item" data-keywords="funcionario interno idea personal hospital trabajador administrativo clinica">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCuatro" aria-expanded="false" aria-controls="faqCuatro">
+                    Soy funcionario del Hospital Fricke, ¿puedo proponer un proyecto?
+                  </button>
+                </h3>
+                <div id="faqCuatro" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p class="mb-0">¡Por supuesto! Fomentamos activamente el <strong>intraemprendimiento</strong>. Si eres funcionario clínico, administrativo o auxiliar del hospital y has detectado una ineficiencia o tienes una idea para mejorar la atención, puedes enviarla seleccionando el perfil 'Funcionario/a HGF' y tipo 'Idea interna' en el formulario. Evaluaremos la factibilidad técnica y te apoyaremos para robustecer el proyecto.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item faq-item" data-keywords="infraestructura servidores tic conectividad red interoperabilidad hl7 fhir pruebas">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCinco" aria-expanded="false" aria-controls="faqCinco">
+                    ¿Qué infraestructura técnica provee el hospital para pruebas de software?
+                  </button>
+                </h3>
+                <div id="faqCinco" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                  <div class="accordion-body">
+                    <p class="mb-0">El hospital cuenta con un ecosistema tecnológico coordinado con TIC. Disponemos de ambientes de pruebas virtuales para evaluar prototipos de software (HealthTech) de manera aislada, sin comprometer los sistemas de producción. Fomentamos el uso de estándares internacionales de interoperabilidad como <strong>HL7 y FHIR</strong> para garantizar que las soluciones propuestas puedan integrarse a futuro de forma limpia.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipo" class="section-pad bg-soft" aria-labelledby="equipo-title">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-label">Liderazgo y Gestión</span>
+          <h2 id="equipo-title">Nuestro Equipo Coordinador</h2>
+          <p>Un equipo multidisciplinario enfocado en tender puentes entre la ciencia, la tecnología y la primera línea de atención de salud.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="team-card text-center">
+              <div class="team-photo placeholder-avatar">🩺</div>
+              <div class="team-body">
+                <h3>Dr. Sebastián Valenzuela</h3>
+                <span class="team-role">Jefe de Unidad de I+D</span>
+                <p class="small text-muted">Médico Especialista en Informática Médica. Lidera la dirección estratégica del portal y la articulación técnica con la directiva.</p>
+                <a href="mailto:innovacion.hgf@redsalud.gob.cl" class="team-contact">✉️ Contactar</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="team-card text-center">
+              <div class="team-photo placeholder-avatar">📋</div>
+              <div class="team-body">
+                <h3>Mg. Carolina Muñoz</h3>
+                <span class="team-role">Coordinadora de Investigación Clínica</span>
+                <p class="small text-muted">Enfermera Universitaria, Magíster en Bioética. Encargada de supervisar el enlace metodológico, comités éticos y ensayos clínicos.</p>
+                <a href="mailto:innovacion.hgf@redsalud.gob.cl" class="team-contact">✉️ Contactar</a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="team-card text-center">
+              <div class="team-photo placeholder-avatar">💻</div>
+              <div class="team-body">
+                <h3>Ing. Felipe Arancibia</h3>
+                <span class="team-role">Ingeniero de Salud Digital</span>
+                <p class="small text-muted">Ingeniero Civil Biomédico. Especialista en interoperabilidad, seguridad de sistemas clínicos y enlace técnico directo con el Departamento de TIC.</p>
+                <a href="mailto:innovacion.hgf@redsalud.gob.cl" class="team-contact">✉️ Contactar</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="postular" class="section-pad bg-blue" aria-labelledby="postular-title">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <div class="col-lg-5 text-white">
+            <span class="section-label light">Formulario demostrativo</span>
+            <h2 id="postular-title">Ingresa una propuesta para evaluación preliminar</h2>
+            <p>Esta versión no almacena información ni envía datos a un servidor. Genera un resumen para copiar, revisar y enviar por el canal institucional que defina TIC.</p>
+            <div class="alert alert-light small mb-0" role="alert">
+              No ingresar datos sensibles, antecedentes clínicos identificables ni información de pacientes en el MVP local.
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <form id="proposalForm" class="proposal-form" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="nombre">Nombre de contacto</label>
+                  <input class="form-control" id="nombre" name="nombre" autocomplete="name" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="correo">Correo</label>
+                  <input class="form-control" id="correo" name="correo" type="email" autocomplete="email" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="perfil">Perfil</label>
+                  <select class="form-select" id="perfil" name="perfil" required>
+                    <option value="">Seleccionar</option>
+                    <option>Funcionario/a HGF o Red SSVQ</option>
+                    <option>Investigador/a o universidad</option>
+                    <option>Startup o empresa tecnológica</option>
+                    <option>Otro actor del ecosistema</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="tipo">Tipo de propuesta</label>
+                  <select class="form-select" id="tipo" name="tipo" required>
+                    <option value="">Seleccionar</option>
+                    <option>Idea interna</option>
+                    <option>Investigación clínica</option>
+                    <option>Solución tecnológica</option>
+                    <option>Alianza estratégica</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="problema">Problema que busca resolver</label>
+                  <textarea class="form-control" id="problema" name="problema" rows="3" maxlength="700" required></textarea>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="solucion">Solución propuesta</label>
+                  <textarea class="form-control" id="solucion" name="solucion" rows="4" maxlength="900" required></textarea>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="impacto">Impacto esperado y métrica sugerida</label>
+                  <textarea class="form-control" id="impacto" name="impacto" rows="3" maxlength="700"></textarea>
+                </div>
+                <div class="col-12 d-flex flex-column flex-sm-row gap-3">
+                  <button class="btn btn-gob-primary" type="submit">Generar resumen</button>
+                  <button class="btn btn-gob-outline-light" type="button" id="downloadSummary" disabled>Descargar resumen .txt</button>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="summaryOutput">Resumen generado</label>
+                  <textarea class="form-control summary-output" id="summaryOutput" rows="8" readonly placeholder="El resumen aparecerá aquí para copiarlo o descargarlo."></textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-6">
+          <h2 class="h5">Unidad de Innovación y Desarrollo</h2>
+          <p class="mb-2">Hospital Dr. Gustavo Fricke | Red SSVQ</p>
+          <p class="small mb-0">MVP preparado para revisión, validación institucional e integración futura por TIC.</p>
+        </div>
+        <div class="col-lg-3">
+          <h3 class="h6">Secciones</h3>
+          <ul class="footer-links">
+            <li><a href="#ecosistema">Ecosistema</a></li>
+            <li><a href="#desafios">Desafíos</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#postular">Postulación</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h3 class="h6">Pendiente TIC</h3>
+          <ul class="footer-links">
+            <li>Correo institucional</li>
+            <li>Hosting definitivo</li>
+            <li>Formulario seguro</li>
+            <li>Validación accesibilidad</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="small mb-0">© <span id="year"></span> Hospital Dr. Gustavo Fricke. Prototipo no productivo.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
