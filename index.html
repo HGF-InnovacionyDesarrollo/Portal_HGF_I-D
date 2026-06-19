@@ -10,6 +10,22 @@
 
   <!-- MVP local sin dependencias externas: todo el layout base está en css/styles.css. -->
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .hero-btn-solid-white {
+      background-color: var(--gob-white) !important;
+      border: 2px solid var(--gob-white) !important;
+      color: var(--gob-blue) !important;
+      transition: all 0.25s ease-in-out;
+    }
+
+    .hero-btn-solid-white:hover,
+    .hero-btn-solid-white:focus {
+      background-color: transparent !important;
+      color: var(--gob-white) !important;
+      border-color: var(--gob-white) !important;
+      text-decoration: none;
+    }
+  </style>
 </head>
 
 <body>
@@ -49,45 +65,130 @@
   </header>
 
   <main id="contenido">
-    <section id="inicio" class="hero-section">
-      <div class="container">
-        <nav aria-label="Ruta de navegación" class="breadcrumb-wrapper">
-          <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-            <li class="breadcrumb-item"><a href="#">Red SSVQ</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Innovación Fricke</li>
-          </ol>
-        </nav>
+    <section id="inicio" class="hero-section text-center text-white"
+      style="background: var(--gob-dark); padding: clamp(5rem, 9vw, 9rem) 0; position: relative;">
+      <!-- Capa de brillo ambiental sutil para estética premium -->
+      <div
+        style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 100%; max-width: 1200px; height: 100%; background: radial-gradient(circle, rgba(0, 111, 179, 0.15) 0%, transparent 70%); pointer-events: none; z-index: 1;">
+      </div>
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center"
+        style="position: relative; z-index: 2;">
+        <!-- 1. Contenedor tipo 'pastilla' con borde -->
+        <div class="mb-4"
+          style="display: inline-block; padding: 0.5rem 1.25rem; border: 1.5px solid rgba(255, 255, 255, 0.3); border-radius: 999px; color: rgba(255, 255, 255, 0.95); font-size: clamp(0.7rem, 1.5vw, 0.8rem); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(4px);">
+          ECOSISTEMA DE INNOVACIÓN - HOSPITAL DR. GUSTAVO FRICKE
+        </div>
 
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
-            <span class="section-label">MVP institucional para validación local</span>
-            <h1>Innovación, Investigación y Desarrollo Tecnológico en Salud</h1>
-            <p class="lead hero-lead">Impulsamos la modernización de la atención sanitaria pública mediante
-              investigación clínica, salud digital y cocreación con el ecosistema innovador, situando cada avance
-              tecnológico al servicio del bienestar de los pacientes.</p>
-            <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
-              <a class="btn btn-gob-primary btn-lg" href="#postular"><i class="bi bi-lightbulb me-2"
-                  aria-hidden="true"></i>Enviar nueva iniciativa</a>
-              <a class="btn btn-gob-outline btn-lg" href="#desafios"><i class="bi bi-search me-2"
-                  aria-hidden="true"></i>Explora desafíos clínicos</a>
-            </div>
-            <p class="small text-muted mt-3 mb-0">Sitio demostrativo. Las cifras, proyectos y correos deben ser
-              validados antes de publicación institucional.</p>
-          </div>
-          <div class="col-lg-5">
-            <div class="hero-panel" role="img" aria-label="Resumen visual del ecosistema de innovación hospitalaria">
-              <div class="hero-panel-header">Ecosistema HGF</div>
-              <div class="hero-panel-node node-primary">Primera línea</div>
-              <div class="hero-panel-node">Investigación clínica</div>
-              <div class="hero-panel-node">Startups HealthTech</div>
-              <div class="hero-panel-node">Pilotaje seguro</div>
-              <div class="hero-panel-footer">Del desafío asistencial a la solución escalable</div>
-            </div>
-          </div>
+        <!-- 2. Título principal -->
+        <h1
+          style="color: #ffffff; text-align: center; font-weight: 800; margin-bottom: 1.5rem; font-size: clamp(1.8rem, 3.5vw, 3.5rem); line-height: 1.2;">
+          Transformando la salud pública desde la <span
+            style="border-bottom: 5px solid var(--gob-red); padding-bottom: 0.2rem;">innovación hospitalaria</span>
+        </h1>
+
+        <!-- 3. Párrafo descriptivo -->
+        <p class="lead mb-5"
+          style="max-width: 720px; margin-left: auto; margin-right: auto; color: rgba(255, 255, 255, 0.85); font-size: clamp(1.1rem, 2vw, 1.3rem); line-height: 1.65;">
+          Diseñamos, asesoramos e implementamos iniciativas que mejoran la gestión clínica y la experiencia usuaria.
+        </p>
+
+        <!-- 4. Dos botones centrados -->
+        <div class="d-flex flex-column flex-sm-row gap-4 mt-5" style="justify-content: center; align-items: center;">
+          <a href="#proyectos" class="btn btn-lg"
+            style="background-color: #ffffff; color: var(--gob-blue); border-radius: 50px; padding: 0.8rem 2.5rem; font-weight: 800; text-decoration: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Explorar
+            Portafolio</a>
+          <a href="#postular" class="btn btn-lg"
+            style="background-color: transparent; color: #ffffff; border: 2px solid #ffffff; border-radius: 50px; padding: 0.8rem 2.5rem; font-weight: 800; text-decoration: none;">Participar</a>
         </div>
       </div>
     </section>
+
+    <section id="ecosistema" class="section-pad bg-soft" aria-labelledby="ecosistema-title">
+      <div class="container">
+
+        <!-- Encabezado restaurado exactamente como en tu imagen -->
+        <div class="text-center mb-5">
+          <h2 id="ecosistema-title"
+            style="color: #0f4c81; font-size: clamp(2rem, 3vw, 2.5rem); font-weight: 800; margin-bottom: 0.5rem;">
+            Modelos de Colaboración</h2>
+          <p style="color: #6b7280; font-size: 1.1rem;">Conectando la primera línea asistencial con el ecosistema
+            científico y tecnológico.</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Tarjeta 1: Intraemprendedora (Azul) -->
+          <div class="col-md-4">
+            <article class="feature-card h-100"
+              style="text-align: left; border-top: 4px solid #0d6efd; padding: 2rem 1.5rem; display: flex; flex-direction: column;">
+              <div style="margin-bottom: 1.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#0d6efd" viewBox="0 0 16 16">
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+                  <path
+                    d="M13.5 5a.5.5 0 0 1 .5-.5h.5V4a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-.5v.5a.5.5 0 0 1-1 0v-.5h-.5a.5.5 0 0 1-.5-.5Z" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 1rem; color: #333;">
+                Innovación<br>Intraemprendedora</h3>
+              <p style="color: #555; font-size: 0.95rem; line-height: 1.6; flex-grow: 1;">Canalizamos sistemáticamente
+                las ideas de optimización surgidas desde el interior de los pasillos clínicos: médicos, enfermería, TENS
+                y administrativos.</p>
+              <a href="#postular"
+                style="color: #0d6efd; font-weight: 800; text-decoration: none; display: inline-block; margin-top: 1rem;">Ingresar
+                Idea Interna &rarr;</a>
+            </article>
+          </div>
+
+          <!-- Tarjeta 2: Investigación (Verde) -->
+          <div class="col-md-4">
+            <article class="feature-card h-100"
+              style="text-align: left; border-top: 4px solid #198754; padding: 2rem 1.5rem; display: flex; flex-direction: column;">
+              <div style="margin-bottom: 1.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#198754" viewBox="0 0 16 16">
+                  <path
+                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                  <path
+                    d="M4.5 8.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H5a.5.5 0 0 1-.5-.5v-2zm3.5.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zM4.5 5.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 1rem; color: #333;">Investigación
+                Científica</h3>
+              <p style="color: #555; font-size: 0.95rem; line-height: 1.6; flex-grow: 1;">Conducto formal para
+                universidades y consorcios. Enlazado directamente con resoluciones del Comité Ético Científico, Ética
+                Asistencial y centros de Simulación Clínica.</p>
+              <a href="#ruta"
+                style="color: #198754; font-weight: 800; text-decoration: none; display: inline-block; margin-top: 1rem;">Ver
+                Protocolos &rarr;</a>
+            </article>
+          </div>
+
+          <!-- Tarjeta 3: Startups (Amarillo/Naranja) -->
+          <div class="col-md-4">
+            <article class="feature-card h-100"
+              style="text-align: left; border-top: 4px solid #ffc107; padding: 2rem 1.5rem; display: flex; flex-direction: column;">
+              <div style="margin-bottom: 1.5rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="#ffc107" viewBox="0 0 16 16">
+                  <path
+                    d="M15.228 2.71c-.347-.487-.991-.84-1.782-.994a5.03 5.03 0 0 0-1.801.077L11.512 0h-1l.775 2.325a7.973 7.973 0 0 0-3.328 1.94 7.973 7.973 0 0 0-1.94 3.328L3.694 6.82v1l1.792 1.134a4.996 4.996 0 0 0 .077 1.801c-.154.79-.507 1.434-.994 1.781l-1.025.728-.888-.888-1.414 1.414 1.414 1.414L0 16l3.197-2.133 1.414 1.414 1.414-1.414-.888-.888.728-1.025c.347-.487.991-.84 1.782-.994a5.03 5.03 0 0 0 1.801.077L11.512 16h1l-.775-2.325a7.973 7.973 0 0 0 3.328-1.94 7.973 7.973 0 0 0 1.94-3.328L15.228 9.5v-1l-1.792-1.134a4.996 4.996 0 0 0-.077-1.801c.154-.79.507-1.434.994-1.781l1.025-.728.888.888 1.414-1.414-1.414-1.414L16 0l-3.197 2.133-1.414-1.414-1.414 1.414.888.888-.728 1.025zM12.5 5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                </svg>
+              </div>
+              <h3 style="font-size: 1.4rem; font-weight: 800; margin-bottom: 1rem; color: #333;">Alianzas Startups &
+                Tech</h3>
+              <p style="color: #555; font-size: 0.95rem; line-height: 1.6; flex-grow: 1;">Entorno clínico real para el
+                pilotaje, validación y certificación de hardware médico o plataformas de inteligencia artificial
+                aplicada.</p>
+              <a href="#postular"
+                style="color: #ffc107; font-weight: 800; text-decoration: none; display: inline-block; margin-top: 1rem;">Proponer
+                Pilotaje &rarr;</a>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    </div>
+
 
     <section class="metrics-section" aria-labelledby="metricas-title">
       <div class="container">
@@ -118,47 +219,6 @@
             <article class="metric-card">
               <strong><span class="counter" data-target="3500">0</span>+</strong>
               <span>Horas optimizadas</span>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="ecosistema" class="section-pad bg-soft" aria-labelledby="ecosistema-title">
-      <div class="container">
-        <div class="section-heading text-center">
-          <span class="section-label">Modelo de colaboración</span>
-          <h2 id="ecosistema-title">Un hub clínico para conectar problemas reales con soluciones implementables</h2>
-          <p>El MVP organiza tres vías de entrada para reducir fricción, ordenar la demanda innovadora y preparar una
-            transición operativa segura hacia pilotos validados.</p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-4">
-            <article class="feature-card h-100">
-              <div class="feature-icon"><i class="bi bi-person-workspace" aria-hidden="true"></i></div>
-              <h3>Innovación intraemprendedora</h3>
-              <p>Canal para que equipos clínicos, administrativos y de apoyo propongan mejoras desde la primera línea,
-                con formularios breves y evaluación de pertinencia.</p>
-              <a href="#postular" class="stretched-link">Ingresar idea interna</a>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="feature-card h-100">
-              <div class="feature-icon"><i class="bi bi-journal-medical" aria-hidden="true"></i></div>
-              <h3>Investigación científica</h3>
-              <p>Vinculación con universidades, comités institucionales, simulación clínica y equipos investigadores
-                para fortalecer proyectos con trazabilidad metodológica.</p>
-              <a href="#ruta" class="stretched-link">Ver flujo de revisión</a>
-            </article>
-          </div>
-          <div class="col-md-4">
-            <article class="feature-card h-100">
-              <div class="feature-icon"><i class="bi bi-cpu" aria-hidden="true"></i></div>
-              <h3>Alianzas startups & tech</h3>
-              <p>Puerta de entrada para soluciones HealthTech que requieran validación clínica, pilotaje controlado,
-                evaluación de factibilidad e interoperabilidad futura.</p>
-              <a href="#desafios" class="stretched-link">Explorar desafíos</a>
             </article>
           </div>
         </div>
@@ -341,39 +401,6 @@
               </div>
             </article>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="ruta" class="section-pad" aria-labelledby="ruta-title">
-      <div class="container">
-        <div class="section-heading text-center">
-          <span class="section-label">Gobernanza del MVP</span>
-          <h2 id="ruta-title">Ruta operativa desde idea a pilotaje</h2>
-          <p>Un flujo simple, auditable y escalable para que TIC y los equipos clínicos puedan evolucionar la plataforma
-            sin rediseñar desde cero.</p>
-        </div>
-        <div class="timeline">
-          <article class="timeline-step"><span>1</span>
-            <h3>Ingreso de necesidad</h3>
-            <p>Recepción de idea, desafío o solución externa mediante formulario liviano.</p>
-          </article>
-          <article class="timeline-step"><span>2</span>
-            <h3>Evaluación de pertinencia</h3>
-            <p>Revisión inicial de alineación estratégica, riesgo, impacto y factibilidad.</p>
-          </article>
-          <article class="timeline-step"><span>3</span>
-            <h3>Validación institucional</h3>
-            <p>Derivación a referentes técnicos, comités y unidades responsables según naturaleza del proyecto.</p>
-          </article>
-          <article class="timeline-step"><span>4</span>
-            <h3>Pilotaje controlado</h3>
-            <p>Prueba acotada con métricas, responsables, resguardos de datos y criterios de salida.</p>
-          </article>
-          <article class="timeline-step"><span>5</span>
-            <h3>Escalamiento</h3>
-            <p>Documentación de aprendizajes, transferencia operacional y evaluación de continuidad.</p>
-          </article>
         </div>
       </div>
     </section>
